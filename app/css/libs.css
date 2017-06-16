@@ -187,7 +187,7 @@ ul.bxslider {
   line-height: 45px;
   color: #999;
   border: 0;
-  font-size: 1.4em;
+  font-size: 3.2em;
   font-weight: bold;
   cursor: pointer;
   outline: none;
@@ -196,11 +196,11 @@ ul.bxslider {
 .cross {
   background: none;
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 10%;
   color: #999;
   border: 0;
-  font-size: 3em;
+  font-size: 7em;
   line-height: 65px;
   font-weight: bold;
   cursor: pointer;
@@ -210,12 +210,13 @@ ul.bxslider {
 .menu {
   z-index: 1000000;
   font-weight: bold;
-  font-size: 0.8em;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   background: #f1f1f1;
   position: absolute;
+  top: 10%;
   text-align: center;
-  font-size: 12px; }
+  font-size: 14px; }
 
 .menu ul {
   margin: 0;
@@ -226,7 +227,7 @@ ul.bxslider {
 .menu li {
   display: block;
   padding: 15px 0 15px 0;
-  border-bottom: #dddddd 1px solid; }
+  border-bottom: #44c0c2 1px solid; }
 
 .menu li:hover {
   display: block;
@@ -237,7 +238,7 @@ ul.bxslider {
 .menu ul li a {
   text-decoration: none;
   margin: 0px;
-  color: #666; }
+  color: #44c0c2; }
 
 .menu ul li a:hover {
   color: #666;
