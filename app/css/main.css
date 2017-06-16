@@ -1,14 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans");
 body {
+  font-family: "Open Sans", Arial, sans-serif;
   margin: 0; }
-  body .container {
+  body header {
     width: 80%;
-    margin: 0 auto; }
-    body .container .logo {
-      font-family: 'Lobster';
+    margin: 11px auto; }
+    body header p {
+      color: #44c0c2;
+      font-family: 'Lobster', Arial, sans-serif;
       font-size: 43px;
-      color: red; }
-    body .container .menu ul {
-      list-style-type: none; }
-      body .container .menu ul li {
+      margin: 0;
+      display: inline; }
+    body header ul {
+      display: inline;
+      list-style-type: none;
+      float: right; }
+      body header ul li {
         display: inline; }
+        body header ul li a {
+          color: #484c55;
+          text-decoration: none;
+          font-size: 15px;
+          padding: 28px 30px 25px;
+          -webkit-transition: all 0.1s;
+          transition: all 0.1s; }
+          body header ul li a:hover {
+            color: #44c0c2;
+            background-color: #f8f9fb;
+            border-bottom: 3px solid #44c0c2;
+            -webkit-transition: all 0.1s;
+            transition: all 0.1s; }

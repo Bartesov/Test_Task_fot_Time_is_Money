@@ -1,19 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans');
+$color-green: #44c0c2
 
 $main-text-color: #484c55
 
+$main-font: 'Open Sans', Arial, sans-serif
+
 body
-	margin: 0 
-	.container
+	font-family: $main-font
+	margin: 0
+	header
 		width: 80%
-		margin: 0 auto
-		.logo
-			font-family: 'Lobster'
-			font-size: 43px
-			color: red
-		.menu
-			ul 
-				list-style-type: none
-				li 
-					display: inline
-					a 
+		margin: 11px auto
+		p 
+			color: $color-green
+			font:
+				family: 'Lobster', Arial, sans-serif
+				size: 43px
+			margin: 0
+			display: inline
+		ul 
+			display: inline
+			list-style-type: none
+			float: right
+			li 
+				display: inline
+				a 
+					color: $main-text-color
+					text-decoration: none
+					font-size: 15px
+					padding: 28px 30px 25px
+					transition: all 0.1s
+
+					&:hover 
+						color: $color-green
+						background-color: #f8f9fb
+						border-bottom: 3px solid #44c0c2
+						transition: all 0.1s
+
+
+
+
+		

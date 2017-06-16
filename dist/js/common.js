@@ -1,5 +1,3 @@
-$(function() {
-
-	// Пользовательские функции
-
-});
+$(document).ready(function(){
+	  $('.bxslider').bxSlider();
+	}); //slider
