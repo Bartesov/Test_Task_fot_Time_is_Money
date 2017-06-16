@@ -209,6 +209,8 @@ ul.bxslider {
 
 .menu {
   z-index: 1000000;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   font-weight: bold;
   width: 80%;
   margin: 0 auto;
@@ -227,13 +229,17 @@ ul.bxslider {
 .menu li {
   display: block;
   padding: 15px 0 15px 0;
-  border-bottom: #44c0c2 1px solid; }
+  border-bottom: #ffffff 3px solid;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .menu li:hover {
   display: block;
-  background: #ffffff;
+  background: #fafff8;
   padding: 15px 0 15px 0;
-  border-bottom: #dddddd 1px solid; }
+  border-bottom: #44c0c2 3px solid;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .menu ul li a {
   text-decoration: none;
@@ -241,16 +247,22 @@ ul.bxslider {
   color: #44c0c2; }
 
 .menu ul li a:hover {
-  color: #666;
-  text-decoration: none; }
+  color: #44c0c2;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .menu a {
   text-decoration: none;
-  color: #666; }
+  color: #666;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .menu a:hover {
   text-decoration: none;
-  color: #666; }
+  color: #44c0c2;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .glyphicon-home {
   color: white;
