@@ -1,43 +1,132 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400, 600');
+
+@import "app/libs/media/_media-queries";
+
 $color-green: #44c0c2
 
-$main-text-color: #484c55
+$main-text-color: #4e525d
 
 $main-font: 'Open Sans', Arial, sans-serif
 
+=basic
+	display: flex
+	width: 80%
+	margin: 0 auto
+
 body
 	font-family: $main-font
+	color: $main-text-color
 	margin: 0
 	header
-		width: 80%
-		margin: 11px auto
-		p 
-			color: $color-green
-			font:
-				family: 'Lobster', Arial, sans-serif
-				size: 43px
-			margin: 0
-			display: inline
-		ul 
-			display: inline
-			list-style-type: none
-			float: right
-			li 
+		+basic
+		margin: 30px auto 11px
+		.logo
+			width: 20%
+			p 
+				color: $color-green
+				font:
+					family: 'Lobster', Arial, sans-serif
+					size: 43px
+				margin: 0
 				display: inline
-				a 
-					color: $main-text-color
-					text-decoration: none
-					font-size: 15px
-					padding: 28px 30px 25px
-					transition: all 0.1s
-
-					&:hover 
-						color: $color-green
-						background-color: #f8f9fb
-						border-bottom: 3px solid #44c0c2
+		.main-menu
+			width: 80%
+			color: #484c55
+			ul 
+				list-style-type: none
+				float: right
+				li 
+					display: inline
+					a 
+						color: $main-text-color
+						text-decoration: none
+						font-size: 15px
+						padding: 28px 30px 25px
 						transition: all 0.1s
 
+						&:hover 
+							color: $color-green
+							background-color: #f8f9fb
+							border-bottom: 3px solid #44c0c2
+							transition: all 0.1s
+	.slider
+		width: 100%
+		.slide 
+			background-image: url("../img/Base.png")
+			background-size: cover
+			background-position: center
+			padding: 10% 0
+			text-align: center
+			font-weight: 600
+			color: #ffffff
+			h1
+				font-size: 63px
+			p
+				font-weight: 400
+				margin: 30px 0 50px
+				font-size: 23px
+			a 
+				margin-top: 20px
+				color: #ffffff
+				text-decoration: none
+				font-size: 26px
+				padding: 10px 50px
+				transition: all 0.1s
+				border: 2px solid #ffffff
+					radius: 7px
+
+				&:hover 
+					background-color: rgba(255, 255, 255, 0.2)
+					transition: all 0.1s
+					border: 2px solid #fffff
+	.content
+		color: $main-text-color
+		+basic
+		display: block
+		text-align: center
+		.team-header
+			h1
+				font-size: 43px
+				font-weight: 400
+			margin: 70px auto 50px
+		.team
+			display: flex
+			.first-row
+				display: flex
+			.second-row
+				display: flex
+			.team-member
+				width: 100%
+				margin: 0 auto
+				.member-photo
+					background-color: #eeeef0
+					width: 200px
+					height: 200px
+					margin: 70px auto
+					border-radius: 50%
+					&:hover
+						background:
+							image: url('../img/plus.png')
+							repeat: no-repeat
+							position: center
+				.member-info
+					p
+						font-size: 14px
+					h3
+						font:
+							size: 22px
+							weight: 400
 
 
+	
+@include screen(320px, 700px) { .team{flex-direction: column}
+.team-member{width: 100%!important}}
 
-		
+@include max-screen(1100px) { 
+.first-row{flex-direction: column}
+.second-row{flex-direction: column}
+.team-member{width: 100%!important}}
+@include min-screen(1100px) { 
+.first-row{flex-direction: row}
+.second-row{flex-direction: row}
+.team-member{width: 100%!important}}

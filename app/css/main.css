@@ -1,32 +1,165 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400, 600");
 body {
   font-family: "Open Sans", Arial, sans-serif;
+  color: #4e525d;
   margin: 0; }
   body header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     width: 80%;
-    margin: 11px auto; }
-    body header p {
-      color: #44c0c2;
-      font-family: 'Lobster', Arial, sans-serif;
-      font-size: 43px;
-      margin: 0;
-      display: inline; }
-    body header ul {
-      display: inline;
-      list-style-type: none;
-      float: right; }
-      body header ul li {
+    margin: 0 auto;
+    margin: 30px auto 11px; }
+    body header .logo {
+      width: 20%; }
+      body header .logo p {
+        color: #44c0c2;
+        font-family: 'Lobster', Arial, sans-serif;
+        font-size: 43px;
+        margin: 0;
         display: inline; }
-        body header ul li a {
-          color: #484c55;
-          text-decoration: none;
-          font-size: 15px;
-          padding: 28px 30px 25px;
-          -webkit-transition: all 0.1s;
-          transition: all 0.1s; }
-          body header ul li a:hover {
-            color: #44c0c2;
-            background-color: #f8f9fb;
-            border-bottom: 3px solid #44c0c2;
+    body header .main-menu {
+      width: 80%;
+      color: #484c55; }
+      body header .main-menu ul {
+        list-style-type: none;
+        float: right; }
+        body header .main-menu ul li {
+          display: inline; }
+          body header .main-menu ul li a {
+            color: #4e525d;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 28px 30px 25px;
             -webkit-transition: all 0.1s;
             transition: all 0.1s; }
+            body header .main-menu ul li a:hover {
+              color: #44c0c2;
+              background-color: #f8f9fb;
+              border-bottom: 3px solid #44c0c2;
+              -webkit-transition: all 0.1s;
+              transition: all 0.1s; }
+  body .slider {
+    width: 100%; }
+    body .slider .slide {
+      background-image: url("../img/Base.png");
+      background-size: cover;
+      background-position: center;
+      padding: 10% 0;
+      text-align: center;
+      font-weight: 600;
+      color: #ffffff; }
+      body .slider .slide h1 {
+        font-size: 63px; }
+      body .slider .slide p {
+        font-weight: 400;
+        margin: 30px 0 50px;
+        font-size: 23px; }
+      body .slider .slide a {
+        margin-top: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 26px;
+        padding: 10px 50px;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+        border: 2px solid #ffffff;
+          -webkit-border-radius: 7px;
+                  border-radius: 7px; }
+        body .slider .slide a:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+          -webkit-transition: all 0.1s;
+          transition: all 0.1s;
+          border: 2px solid #fffff; }
+  body .content {
+    color: #4e525d;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center; }
+    body .content .team-header {
+      margin: 70px auto 50px; }
+      body .content .team-header h1 {
+        font-size: 43px;
+        font-weight: 400; }
+    body .content .team {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      body .content .team .first-row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      body .content .team .second-row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      body .content .team .team-member {
+        width: 100%;
+        margin: 0 auto; }
+        body .content .team .team-member .member-photo {
+          background-color: #eeeef0;
+          width: 200px;
+          height: 200px;
+          margin: 70px auto;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%; }
+          body .content .team .team-member .member-photo:hover {
+            background-image: url("../img/plus.png");
+            background-repeat: no-repeat;
+            background-position: center; }
+        body .content .team .team-member .member-info p {
+          font-size: 14px; }
+        body .content .team .team-member .member-info h3 {
+          font-size: 22px;
+          font-weight: 400; }
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .team-member {
+    width: 100% !important; } }
+
+@media only screen and (max-width: 1100px) {
+  .first-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .second-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .team-member {
+    width: 100% !important; } }
+
+@media only screen and (min-width: 1100px) {
+  .first-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .second-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .team-member {
+    width: 100% !important; } }
