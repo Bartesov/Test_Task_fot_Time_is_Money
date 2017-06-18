@@ -125,37 +125,46 @@ body
 				width: 80%
 				display: flex
 				margin: 0 auto
-				.plan-info
-					width: 100%
-					table 
-						margin: 0 auto
-						width: 95%
-						td
-							background-color: #ffffff
-							font-size: 14px
-							padding: 15px 0
-							border-bottom:
-						td.plan-header
-							background-color: #485460
-							color: #ffffff
+				.pro
+					margin: 0 20px
+				.plan
+					width: 33%
+					.plan-header
+						background-color: #485460
+						color: #ffffff
+						padding: 20px 0
+						p
 							font-size: 26px
-							padding: 30px 0
-						td.price, td.btn
-							background-color: #f8f9fb
-							color: #485460
-							font-size: 20px
-							padding: 30px 0
-							a
-								background-color: #788492
-								color: #ffffff
-								font:
-									size: 14px
-									weight: 600
-								text-decoration: none
-								padding: 10px 50px
-								border-radius: 5px
-								&:hover
-									background-color: #49cbcd
+							margin: 0
+					.plan-price
+						background-color: #f7f8fa
+						color: #485460
+						font-size: 20px
+						padding: 35px 0
+						p 
+							margin: 0
+					.plan-cont 
+						background-color: #ffffff
+						p 
+							margin: 0
+							border-bottom: 1px solid #f1f1f1
+							padding: 20px 0
+					.btn
+						background-color: #f7f8fa
+						color: #485460
+						font-size: 20px
+						padding: 30px 0
+						a
+							background-color: #788492
+							color: #ffffff
+							font:
+								size: 14px
+								weight: 600
+							text-decoration: none
+							padding: 15px 50px
+							border-radius: 2px
+							&:hover
+								background-color: #49cbcd
 	footer
 		color: #ffffff
 		padding: 100px 0
@@ -171,27 +180,40 @@ body
 				weight: 400
 		.contact
 			+basic
+			margin-top: 80px
 			.cont-info
 				width: 100%
 				h4
 					margin: 0
+					font:
+						size: 23px
+						weight: 400
+				p 
+					font-size: 12px
 				.social
 					display: flex
 					width: 30%
+					margin: 40px 0
 					div 
 						margin: 0 auto
-						width: 30px
-						height: 30px
+						width: 35px
+						height: 35px
 						background-color: #FFF
 						border-radius: 50%
 						text-align: center
-					.fb 
-						background-color: red
-					.tw
-						background-color: #41abe1
+						font-size: 22px
 						a 
 							text-decoration: none
 							color: #ffffff
+							vertical-align: middle
+					.fb 
+						background-color: #3a5896
+						margin-left: 0
+					.tw
+						background-color: #41abe1
+					.gg
+						background-color: #e44c41
+
 				.phone
 					p
 						font-size: 14px
@@ -226,6 +248,8 @@ body
 							size: 20px
 						padding: 10px 50px
 						border-radius: 5px
+
+
 
 
 

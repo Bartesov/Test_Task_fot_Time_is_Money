@@ -3,5 +3,16 @@ $(document).ready(function(){
 	  	auto: true,
 	  	controls: true,
 	  	pager: false
-	  });
-	}); //slider
+	  }); //slider
+	  $( '.plan-button' ).hover(
+			function() {
+			    $(this).parent().parent().find(".plan-header").css("background-color", "#49cbcd");
+			}, 
+			function(){
+				$(this).parent().parent().find(".plan-header").css("background-color", "#485460");
+			}
+		)
+
+	}); //buy now
+
+ 

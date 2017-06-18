@@ -129,36 +129,46 @@ body {
         display: -ms-flexbox;
         display: flex;
         margin: 0 auto; }
-        body .content .plans-cont .plans .plan-info {
-          width: 100%; }
-          body .content .plans-cont .plans .plan-info table {
-            margin: 0 auto;
-            width: 95%; }
-            body .content .plans-cont .plans .plan-info table td {
-              background-color: #ffffff;
-              font-size: 14px;
-              padding: 15px 0; }
-            body .content .plans-cont .plans .plan-info table td.plan-header {
-              background-color: #485460;
-              color: #ffffff;
+        body .content .plans-cont .plans .pro {
+          margin: 0 20px; }
+        body .content .plans-cont .plans .plan {
+          width: 33%; }
+          body .content .plans-cont .plans .plan .plan-header {
+            background-color: #485460;
+            color: #ffffff;
+            padding: 20px 0; }
+            body .content .plans-cont .plans .plan .plan-header p {
               font-size: 26px;
-              padding: 30px 0; }
-            body .content .plans-cont .plans .plan-info table td.price, body .content .plans-cont .plans .plan-info table td.btn {
-              background-color: #f8f9fb;
-              color: #485460;
-              font-size: 20px;
-              padding: 30px 0; }
-              body .content .plans-cont .plans .plan-info table td.price a, body .content .plans-cont .plans .plan-info table td.btn a {
-                background-color: #788492;
-                color: #ffffff;
-                font-size: 14px;
-                font-weight: 600;
-                text-decoration: none;
-                padding: 10px 50px;
-                -webkit-border-radius: 5px;
-                        border-radius: 5px; }
-                body .content .plans-cont .plans .plan-info table td.price a:hover, body .content .plans-cont .plans .plan-info table td.btn a:hover {
-                  background-color: #49cbcd; }
+              margin: 0; }
+          body .content .plans-cont .plans .plan .plan-price {
+            background-color: #f7f8fa;
+            color: #485460;
+            font-size: 20px;
+            padding: 35px 0; }
+            body .content .plans-cont .plans .plan .plan-price p {
+              margin: 0; }
+          body .content .plans-cont .plans .plan .plan-cont {
+            background-color: #ffffff; }
+            body .content .plans-cont .plans .plan .plan-cont p {
+              margin: 0;
+              border-bottom: 1px solid #f1f1f1;
+              padding: 20px 0; }
+          body .content .plans-cont .plans .plan .btn {
+            background-color: #f7f8fa;
+            color: #485460;
+            font-size: 20px;
+            padding: 30px 0; }
+            body .content .plans-cont .plans .plan .btn a {
+              background-color: #788492;
+              color: #ffffff;
+              font-size: 14px;
+              font-weight: 600;
+              text-decoration: none;
+              padding: 15px 50px;
+              -webkit-border-radius: 2px;
+                      border-radius: 2px; }
+              body .content .plans-cont .plans .plan .btn a:hover {
+                background-color: #49cbcd; }
   body footer {
     color: #ffffff;
     padding: 100px 0;
@@ -176,30 +186,43 @@ body {
       display: -ms-flexbox;
       display: flex;
       width: 80%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-top: 80px; }
       body footer .contact .cont-info {
         width: 100%; }
         body footer .contact .cont-info h4 {
-          margin: 0; }
+          margin: 0;
+          font-size: 23px;
+          font-weight: 400; }
+        body footer .contact .cont-info p {
+          font-size: 12px; }
         body footer .contact .cont-info .social {
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
-          width: 30%; }
+          width: 30%;
+          margin: 40px 0; }
           body footer .contact .cont-info .social div {
             margin: 0 auto;
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
             background-color: #FFF;
             -webkit-border-radius: 50%;
                     border-radius: 50%;
-            text-align: center; }
-          body footer .contact .cont-info .social .fb {
-            background-color: red; }
-            body footer .contact .cont-info .social .fb a {
+            text-align: center;
+            font-size: 22px; }
+            body footer .contact .cont-info .social div a {
               text-decoration: none;
-              color: #ffffff; }
+              color: #ffffff;
+              vertical-align: middle; }
+          body footer .contact .cont-info .social .fb {
+            background-color: #3a5896;
+            margin-left: 0; }
+          body footer .contact .cont-info .social .tw {
+            background-color: #41abe1; }
+          body footer .contact .cont-info .social .gg {
+            background-color: #e44c41; }
         body footer .contact .cont-info .phone p {
           font-size: 14px;
           color: #bface2; }
