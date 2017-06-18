@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400, 600');
-
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600,700');
 @import "app/libs/media/_media-queries";
 
 $color-green: #44c0c2
@@ -38,7 +37,6 @@ body
 				li 
 					display: inline
 					a 
-						color: $main-text-color
 						text-decoration: none
 						font-size: 15px
 						padding: 28px 30px 25px
@@ -57,10 +55,10 @@ body
 			background-position: center
 			padding: 10% 0
 			text-align: center
-			font-weight: 600
 			color: #ffffff
 			h1
 				font-size: 63px
+				font-weight: 600
 			p
 				font-weight: 400
 				margin: 30px 0 50px
@@ -81,7 +79,7 @@ body
 					border: 2px solid #fffff
 	.content
 		color: $main-text-color
-		+basic
+		width: 100%
 		display: block
 		text-align: center
 		.team-header
@@ -90,6 +88,8 @@ body
 				font-weight: 400
 			margin: 70px auto 50px
 		.team
+			width: 80%
+			margin: 0 auto
 			display: flex
 			.first-row
 				display: flex
@@ -116,11 +116,57 @@ body
 						font:
 							size: 22px
 							weight: 400
+		.plans-cont
+			background-color: #f1f1f1
+			width: 100%
+			padding: 120px 0 100px
+			.plans 
+				width: 80%
+				display: flex
+				margin: 0 auto
+				.plan-info
+					width: 100%
+					table 
+						margin: 0 auto
+						width: 95%
+						td
+							background-color: #ffffff
+							font-size: 14px
+							padding: 15px 0
+							border-bottom:
+						td.plan-header
+							background-color: #485460
+							color: #ffffff
+							font-size: 26px
+							padding: 30px 0
+						td.price, td.btn
+							background-color: #f8f9fb
+							color: #485460
+							font-size: 20px
+							padding: 30px 0
+							a
+								background-color: #788492
+								color: #ffffff
+								font:
+									size: 14px
+									weight: 600
+								text-decoration: none
+								padding: 10px 50px
+								border-radius: 5px
+								&:hover
+									background-color: #49cbcd
+
+
+
+
+
 
 
 	
 @include screen(320px, 700px) { .team{flex-direction: column}
-.team-member{width: 100%!important}}
+.team-member{width: 100%!important}.slide>h1{font-size: 40px!important; margin: 0 0 30px 0!important;}.slide>p{font-size: 12px!important; margin: 40px 0 20px!important;}.plans{flex-direction: column}}
+
+@include screen(320px, 700px) {}
 
 @include max-screen(1100px) { 
 .first-row{flex-direction: column}
