@@ -91,6 +91,7 @@ body
 			width: 80%
 			margin: 0 auto
 			display: flex
+			padding: 0 0 110px 0
 			.first-row
 				display: flex
 			.second-row
@@ -155,6 +156,81 @@ body
 								border-radius: 5px
 								&:hover
 									background-color: #49cbcd
+	footer
+		color: #ffffff
+		padding: 100px 0
+		background:
+			image: url("../img/cont.png")
+			size: cover
+			position: top
+			repeat: no-repeat
+		h1
+			text-align: center
+			font:
+				size: 43px
+				weight: 400
+		.contact
+			+basic
+			.cont-info
+				width: 100%
+				h4
+					margin: 0
+				.social
+					display: flex
+					width: 30%
+					div 
+						margin: 0 auto
+						width: 30px
+						height: 30px
+						background-color: #FFF
+						border-radius: 50%
+						text-align: center
+					.fb 
+						background-color: red
+					.tw
+						background-color: #41abe1
+						a 
+							text-decoration: none
+							color: #ffffff
+				.phone
+					p
+						font-size: 14px
+						color: #bface2
+			.cont-form
+				width: 100%
+				.mn 
+					display: flex
+					input 
+						width: 44%
+						padding: 10px
+						border-radius: 5px
+						border: none
+					.email
+						margin-left: 5%
+				.text
+					display: flex
+					textarea
+						width: 100%
+						margin: 15px 0
+						border-radius: 5px
+						padding: 10px
+						resize: none
+				.send
+					float: right
+					button
+						background-color: #44c0c2
+						border: none
+						color: #ffffff
+						font:
+							family: $main-font
+							size: 20px
+						padding: 10px 50px
+						border-radius: 5px
+
+
+
+
+
 
 
 
@@ -176,3 +252,6 @@ body
 .first-row{flex-direction: row}
 .second-row{flex-direction: row}
 .team-member{width: 100%!important}}
+
+@include max-screen(1000px) { 
+.contact{flex-direction: column!important}}
