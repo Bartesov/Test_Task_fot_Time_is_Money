@@ -87,7 +87,8 @@ body {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      padding: 0 0 110px 0; }
       body .content .team .first-row {
         display: -webkit-box;
         display: -webkit-flex;
@@ -158,6 +159,88 @@ body {
                         border-radius: 5px; }
                 body .content .plans-cont .plans .plan-info table td.price a:hover, body .content .plans-cont .plans .plan-info table td.btn a:hover {
                   background-color: #49cbcd; }
+  body footer {
+    color: #ffffff;
+    padding: 100px 0;
+    background-image: url("../img/cont.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; }
+    body footer h1 {
+      text-align: center;
+      font-size: 43px;
+      font-weight: 400; }
+    body footer .contact {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 80%;
+      margin: 0 auto; }
+      body footer .contact .cont-info {
+        width: 100%; }
+        body footer .contact .cont-info h4 {
+          margin: 0; }
+        body footer .contact .cont-info .social {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          width: 30%; }
+          body footer .contact .cont-info .social div {
+            margin: 0 auto;
+            width: 30px;
+            height: 30px;
+            background-color: #FFF;
+            -webkit-border-radius: 50%;
+                    border-radius: 50%;
+            text-align: center; }
+          body footer .contact .cont-info .social .fb {
+            background-color: red; }
+            body footer .contact .cont-info .social .fb a {
+              text-decoration: none;
+              color: #ffffff; }
+        body footer .contact .cont-info .phone p {
+          font-size: 14px;
+          color: #bface2; }
+      body footer .contact .cont-form {
+        width: 100%; }
+        body footer .contact .cont-form .mn {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          body footer .contact .cont-form .mn input {
+            width: 44%;
+            padding: 10px;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
+            border: none; }
+          body footer .contact .cont-form .mn .email {
+            margin-left: 5%; }
+        body footer .contact .cont-form .text {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          body footer .contact .cont-form .text textarea {
+            width: 100%;
+            margin: 15px 0;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
+            padding: 10px;
+            resize: none; }
+        body footer .contact .cont-form .send {
+          float: right; }
+          body footer .contact .cont-form .send button {
+            background-color: #44c0c2;
+            border: none;
+            color: #ffffff;
+            font-family: "Open Sans", Arial, sans-serif;
+            font-size: 20px;
+            padding: 10px 50px;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px; }
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
   .team {
@@ -212,3 +295,11 @@ body {
             flex-direction: row; }
   .team-member {
     width: 100% !important; } }
+
+@media only screen and (max-width: 1000px) {
+  .contact {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; } }
