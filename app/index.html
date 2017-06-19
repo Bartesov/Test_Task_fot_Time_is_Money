@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test Task for "Time is Money"</title>
+
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="style.css">
-
+	<link rel="stylesheet" href="style.css">		  
 
 
 </head>
 <body>
 	<header id="head">
-		<div class="logo">
-			<p>Author</p>
-		</div>
-		<div class="main-menu">
-			<ul>
-				<li><a href="#head">Home</a></li>
-				<li><a href="#">Service</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#team">Team</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+		<div class="head">
+			<div class="logo">
+				<p>Author</p>
+			</div>
+			<div class="main-menu">
+				<ul>
+					<li><a href="#head">Home</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 	<div class="slider">
@@ -180,18 +183,30 @@
 					<p>info@mail.com</p>
 				</div>
 			</div>
-			<div class="cont-form">
-				<div class="mn">
-					<input type="text" class="name" placeholder="Name">
-					<input type="text" class="email" placeholder="Email">
-				</div>
-				<div class="text">
-					<textarea class="message" rows="15" name="message" id="message"  placeholder="Message"></textarea>
-				</div>
-				<div class="send">
-					<button>Send</button>
-				</div>
-			</div>
+			<div class="cont-form">    
+			    <div id="feedback-box">
+			      <form id="feedback-form">
+			      	<div class="nm">
+				        <div class="input-bloc w1">
+				         	<input id="name" name="name" class="name" type="text" placeholder="Name" />
+				          	<div class="error-box">
+				            &nbsp;</div>
+				        </div>
+				        <div class="input-bloc w1">
+				          <input id="email" name="email" class="email" type="text" placeholder="Email" />
+				          <div class="error-box">
+				            &nbsp;</div>
+				        </div>
+				    </div>
+			        <div class="input-bloc msg">
+			          <textarea id="message" class="message" name="message" rows="8" placeholder="Message"></textarea>
+			          <div class="error-box"></div>
+			        </div>
+			        <div>
+			          <input id="send" class="send" type="submit" value="Send" /></div>
+			      </form>
+			    </div>      
+    		</div>
 		</div>
 	</footer>
 
@@ -199,6 +214,7 @@
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+
 
 </body>
 </html>
