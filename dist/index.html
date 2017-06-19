@@ -2,42 +2,233 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test Task for "Time is Money"</title>
+
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">		  
+	
 
 </head>
-<body>
-	<header>
-		<p>Author</p>
-		<ul>
-			<li><a href="">Home</a></li>
-			<li><a href="#">Service</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Team</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
+<body id="home">
+	<header id="head">
+		<div class="head" >
+			<div class="logo" >
+				<p>Author</p>
+			</div>
+			<div class="main-menu">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="">Portfolio</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="humb">
+				<button class="hamburger">&#9776;</button>
+  				<button class="cross">&#735;</button>
+			</div>
+			<div class="menu">
+			  <ul>
+			    <a href="#home"><li>Home</li></a>
+			    <a href="#service"><li>Service</li></a>
+			    <a href=""><li>Portfolio</li></a>
+			    <a href="#team"><li>Team</li></a>
+			    <a href=""><li>Blog</li></a>
+			    <a href="#contact"><li>Contact</li></a>
+			  </ul>
+			</div> 
+		</div>
 	</header>
 	<div class="slider">
-
 		<ul class="bxslider">
 			<li>
-				<div></div>
+				<div class="slide">
+					<h1>This is FIRST main heading</h1>
+					<p>Lorem Ipsum is simply dummy text <br> of the printing</p>
+					<a href="#">Learn More</a>
+				</div>
 			</li>
 			<li>
-				<div></div>
+				<div class="slide">
+					<h1>This is SECOND main heading</h1>
+					<p>Lorem Ipsum is simply dummy text <br> of the printing</p>
+					<a href="#">Learn More</a>
+				</div>
 			</li>
 			<li>
-				<div></div>
+				<div class="slide">
+					<h1>This is THIRD main heading</h1>
+					<p>Lorem Ipsum is simply dummy text <br> of the printing</p>
+					<a href="#">Learn More</a>
+				</div>
 			</li>
 		</ul>
 	</div>
+	<div class="content">
+		<div class="team-header" id="team">
+			<h1>The Team</h1>
+		</div>
+		<div class="team">
+			<div class="first-row">
+				<div class="team-member">
+					<div class="member-photo">
+						
+					</div>
+					<div class="member-info">
+						<h3>Adrian Thomas</h3>
+						<p>CEO &#38; Founder</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<div class="member-photo">
+						
+					</div>
+					<div class="member-info">
+						<h3>Narate Ketram</h3>
+						<p>Creative Director</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+			</div>
+			<div class="second-row">
+				<div class="team-member">
+					<div class="member-photo">
+						
+					</div>
+					<div class="member-info">
+						<h3>Fernando Comet</h3>
+						<p>CEO &#38; Founder</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<div class="member-photo">
+						
+					</div>
+					<div class="member-info">
+						<h3>Adedayo Saheed</h3>
+						<p>Creative Director</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="plans-cont" id="service">
+			<div class="plans">
+				<div class="plan">
+					<div class="plan-header basic-2">
+						<p>Basic</p>
+					</div>
+					<div class="plan-price">
+						<p>$5.01/ Month</p>
+					</div>
+					<div class="plan-cont">
+						<p>Lorem ipsum</p>
+						<p>Dolor sit amet, consect</p>
+						<p>Adipiscing elit</p>
+						<p>Proin commodo turpis</p>
+						<p>lacus pulvinarvel</p>
+						<p>Prnare nisi pretium.</p>
+					</div>
+					<div class="btn">
+						<a href="#" class="plan-button">Buy now</a>
+					</div>
+				</div>
+				<div class="plan pro">
+					<div class="plan-header pro-2">
+						<p>Pro</p>
+					</div>
+					<div class="plan-price">
+						<p>$10.01/ Month</p>
+					</div>
+					<div class="plan-cont">
+						<p>Lorem ipsum</p>
+						<p>Dolor sit amet, consect</p>
+						<p>Adipiscing elit</p>
+						<p>Proin commodo turpis</p>
+						<p>lacus pulvinarvel</p>
+						<p>Prnare nisi pretium.</p>
+					</div>
+					<div class="btn">
+						<a href="#" class="plan-button">Buy now</a>
+					</div>
+				</div>
+				<div class="plan">
+					<div class="plan-header premium-2">
+						<p>Premium</p>
+					</div>
+					<div class="plan-price">
+						<p>$20.01/ Month</p>
+					</div>
+					<div class="plan-cont">
+						<p>Lorem ipsum</p>
+						<p>Dolor sit amet, consect</p>
+						<p>Adipiscing elit</p>
+						<p>Proin commodo turpis</p>
+						<p>lacus pulvinarvel</p>
+						<p>Prnare nisi pretium.</p>
+					</div>
+					<div class="btn">
+						<a href="#" class="plan-button">Buy now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="contact">
+		<h1>Contact Us</h1>
+		<div class="contact">
+			<div class="cont-info">
+				<h4>Get in touch with us</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/> Error, aperiam suscipit veritatis in ea doloremque</p>
+				<div class="social">
+					<div class="fb"><a href="#"><span class="icon-facebook"></span></a></div>
+					<div class="tw"><a href="#"><span class="icon-twitter"></span></a></div>
+					<div class="gg"><a href="#"><span class="icon-google-plus"></span></a></div>
+				</div>
+				<div class="phone">
+					<p>Posted by Dospel &#38; GanjaParker</p>
+					<p>+XX-XXXX-XXXX-XX</p>
+					<p>info@mail.com</p>
+				</div>
+			</div>
+			<div class="cont-form">    
+			    <div id="feedback-box">
+			      <form id="feedback-form">
+			      	<div class="nm">
+				        <div class="input-bloc w1">
+				         	<input id="name" name="name" class="name" type="text" placeholder="Name" />
+				          	<div class="error-box">
+				            &nbsp;</div>
+				        </div>
+				        <div class="input-bloc w1">
+				          <input id="email" name="email" class="email" type="text" placeholder="Email" />
+				          <div class="error-box">
+				            &nbsp;</div>
+				        </div>
+				    </div>
+			        <div class="input-bloc msg">
+			          <textarea id="message" class="message" name="message" rows="8" placeholder="Message"></textarea>
+			          <div class="error-box"></div>
+			        </div>
+			        <div>
+			          <input id="send" class="send" type="submit" value="Send" /></div>
+			      </form>
+			    </div>      
+    		</div>
+		</div>
+	</footer>
 
 
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+
 
 </body>
 </html>

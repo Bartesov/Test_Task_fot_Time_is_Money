@@ -1,4 +1,94 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600,700");
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 30px;
+  right: 10%;
+  line-height: 45px;
+  color: #999;
+  border: 0;
+  font-size: 3.2em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.cross {
+  background: none;
+  position: absolute;
+  top: 32px;
+  right: 10%;
+  color: #999;
+  border: 0;
+  font-size: 7em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.menu {
+  z-index: 1000000;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-weight: bold;
+  width: 80%;
+  background: #f1f1f1;
+  position: absolute;
+  top: 13%;
+  text-align: center;
+  font-size: 14px; }
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none; }
+
+.menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #ffffff 3px solid;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.menu li:hover {
+  display: block;
+  background: #fafff8;
+  padding: 15px 0 15px 0;
+  border-bottom: #44c0c2 3px solid;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #44c0c2; }
+
+.menu ul li a:hover {
+  color: #44c0c2;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.menu a {
+  text-decoration: none;
+  color: #666;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.menu a:hover {
+  text-decoration: none;
+  color: #44c0c2;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.glyphicon-home {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin: 0 auto; }
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   color: #4e525d;
@@ -12,7 +102,7 @@ body {
       display: flex;
       width: 80%;
       margin: 0 auto;
-      margin: 30px auto 11px; }
+      margin: 30px auto 6px; }
       body header .head .logo {
         width: 20%; }
         body header .head .logo p {
@@ -204,7 +294,7 @@ body {
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
-          width: 30%;
+          width: 40%;
           margin: 40px 0; }
           body footer .contact .cont-info .social div {
             margin: 0 auto;
@@ -219,6 +309,8 @@ body {
               text-decoration: none;
               color: #ffffff;
               vertical-align: middle; }
+              body footer .contact .cont-info .social div a span {
+                padding: 0; }
           body footer .contact .cont-info .social .fb {
             background-color: #3a5896;
             margin-left: 0; }
@@ -326,21 +418,23 @@ body {
 
 @media only screen and (max-width: 1100px) {
   .first-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; }
   .second-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; }
   .team-member {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .main-menu {
+    display: none; } }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1101px) {
   .first-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -354,7 +448,9 @@ body {
         -ms-flex-direction: row;
             flex-direction: row; }
   .team-member {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .humb {
+    display: none; } }
 
 @media only screen and (max-width: 900px) {
   .contact {
@@ -382,4 +478,6 @@ body {
   .social {
     margin: 0 auto !important; }
   .input-bloc {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .fb {
+    margin: 0 auto !important; } }

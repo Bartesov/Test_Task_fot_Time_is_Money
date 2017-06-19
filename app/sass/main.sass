@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600,700');
-@import "app/libs/media/_media-queries";
+@import "app/libs/media/_media-queries"
+
+@import "app/libs/humb/dist/humb"
 
 $color-green: #44c0c2
  
@@ -21,7 +23,7 @@ body
 
 		.head
 			+basic
-			margin: 30px auto 11px
+			margin: 30px auto 6px
 			.logo
 				width: 20%
 				p 
@@ -195,7 +197,7 @@ body
 					font-size: 12px
 				.social
 					display: flex
-					width: 30%
+					width: 40%
 					margin: 40px 0
 					div 
 						margin: 0 auto
@@ -209,6 +211,8 @@ body
 							text-decoration: none
 							color: #ffffff
 							vertical-align: middle
+							span 
+								padding: 0
 					.fb 
 						background-color: #3a5896
 						margin-left: 0
@@ -290,13 +294,14 @@ body
 @include screen(320px, 700px) {}
 
 @include max-screen(1100px) { 
-.first-row{flex-direction: column}
-.second-row{flex-direction: column}
-.team-member{width: 100%!important}}
-@include min-screen(1100px) { 
+.first-row{flex-direction: column!important}
+.second-row{flex-direction: column!important}
+.team-member{width: 100%!important}.main-menu{display:none}}
+
+@include min-screen(1101px) { 
 .first-row{flex-direction: row}
 .second-row{flex-direction: row}
-.team-member{width: 100%!important}}
+.team-member{width: 100%!important}.humb{display:none}}
 
 @include max-screen(900px) { 
-.contact{flex-direction: column!important} .cont-info{width: 100%!important; text-align: center;}.cont-form{width: 100%!important;} .nm{flex-direction: column!important} .name{width:100%!important} .email{width:100%!important; float: left!important} .social{margin: 0 auto!important} .input-bloc{width:100%!important}}
+.contact{flex-direction: column!important} .cont-info{width: 100%!important; text-align: center;}.cont-form{width: 100%!important;} .nm{flex-direction: column!important} .name{width:100%!important} .email{width:100%!important; float: left!important} .social{margin: 0 auto!important} .input-bloc{width:100%!important} .fb{margin: 0 auto!important}}
